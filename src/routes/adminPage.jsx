@@ -1,5 +1,6 @@
 import React from 'react';
 import ApiFacade from "../apiFacade";
+import CreateBoat from "./createBoat";
 
 const AdminPage = () => {
 
@@ -7,7 +8,7 @@ const AdminPage = () => {
             <div>
                 {ApiFacade.getRoles() === "admin" ?
                     (
-                        <h1 className="title">Admin page</h1>
+                        <CreateBoat/>
                     )
                     :
                     (<h1 className="title">You are not an admin</h1>)

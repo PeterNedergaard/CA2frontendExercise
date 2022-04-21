@@ -1,0 +1,12 @@
+.owner-table {
+    width: 30%;
+}
+
+.owner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+}

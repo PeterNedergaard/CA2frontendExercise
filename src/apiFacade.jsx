@@ -36,9 +36,24 @@ function apiFacade() {
 
         return await fetch(URL + "/api/info/jokes")
             .then(handleHttpErrors)
-            // .then(res => ())
 
     }
+
+
+    const getOwners = async () => {
+
+        return await fetch(URL + "/api/info/owners")
+            .then(handleHttpErrors)
+
+    }
+
+
+    const createBoat = (brand,make,name) => {
+        const options = makeOptions("POST", false,{brand: brand,  make: make, name: name});
+        return fetch(URL + "/api/info/boat", options)
+            .then(handleHttpErrors)
+    }
+
 
     const login = (user, password) => {
         const options = makeOptions("POST", true,{username: user, password: password });
@@ -86,7 +101,9 @@ function apiFacade() {
         fetchData,
         getRoles,
         getJokes,
-        getName
+        getName,
+        getOwners,
+        createBoat
     }
 }
 

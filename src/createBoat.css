@@ -1,0 +1,27 @@
+.create-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: #f0f0f0;
+
+}
+
+.container-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.success-text{
+    color: green;
+    font-size: 20px;
+}
+
+
+

@@ -1,12 +1,21 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import ApiFacade from "../apiFacade";
+import Owners from "./owners";
+import URL from "../settings";
+
 
 const UserPage = props => {
+
+
+
+
+
     return (
         <div>
+
             {ApiFacade.getRoles() === "user" ?
                 (
-                    <h1 className="title">User page</h1>
+                    <Owners/>
                 )
                 :
                 (<h1>You are not a user</h1>)

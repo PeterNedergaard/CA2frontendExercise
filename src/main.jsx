@@ -18,6 +18,7 @@ render(
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<App/>}>
+                <Route path="/" element={<Welcome/>}/>
                 <Route path="/welcome" element={<Welcome/>}/>
                 <Route path="/userpage" element={<UserPage/>}/>
                 <Route path="/adminpage" element={<AdminPage/>}/>
